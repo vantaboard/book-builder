@@ -5,29 +5,32 @@ import Slider from './Slider';
 
 const Camera = () => <PerspectiveCamera position={[20, 2, 2]} makeDefault />;
 
+const sliderValues: [string, number, number][] = [
+  ['width', book.width, 1],
+  ['height', book.height, 0.75],
+  ['length', book.length, 0.5],
+  ['lip', book.lip, 0.25],
+];
+
+const sliders: Array<JSX.Element> = [];
+sliderValues.forEach((_) => {
+  const name: string = _[0];
+  const value: number = _[1];
+  const percent: number = _[2];
+  sliders.push(
+    <Slider
+      name={name}
+      value={value}
+      pos={[book.length, (book.height / 2) * percent, book.width]}
+    />
+  );
+});
+const Sliders = () => <>{sliders}</>;
+
 export default () => {
   return (
     <>
-      <Slider
-        name={'width'}
-        value={book.width}
-        pos={[book.length, (book.height / 2) * 1, book.width]}
-      />
-      <Slider
-        name={'height'}
-        value={book.height}
-        pos={[book.length, (book.height / 2) * 0.75, book.width]}
-      />
-      <Slider
-        name={'length'}
-        value={book.length}
-        pos={[book.length, (book.height / 2) * 0.5, book.width]}
-      />
-      <Slider
-        name={'lip'}
-        value={book.lip}
-        pos={[book.length, (book.height / 2) * 0.25, book.width]}
-      />
+      <Sliders />
       <Book />
       <ambientLight />
       <Camera />

@@ -4,7 +4,7 @@ export class Book {
   width: number;
   lip: number;
   unitSystem: 'metric' | 'imperial';
-  units: 'inches' | 'millimeters';
+  units: 'in' | 'mm';
 
   constructor(
     length: number,
@@ -18,6 +18,6 @@ export class Book {
     this.width = width;
     this.lip = lip;
     this.unitSystem = unitSystem;
-    this.units = unitSystem === 'metric' ? 'millimeters' : 'inches';
+    this.units = unitSystem === 'metric' ? 'mm' : 'in';
   }
 }
