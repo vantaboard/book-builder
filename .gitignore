@@ -6,3 +6,5 @@ dist-ssr
 yarn.lock
 package.lock
 *.log
+storybook-static
+.history
