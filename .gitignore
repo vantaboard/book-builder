@@ -8,3 +8,4 @@ package.lock
 *.log
 storybook-static
 .history
+src/style-dictionary-dist/
