@@ -1,0 +1,34 @@
+{
+  "palette": {
+    "shadow": {
+      "alpha": {
+        "soft": 0.25,
+        "hard": 1
+      },
+      "color": {
+        "base": "{palette.shadow.color.black}",
+        "highlight": "cyan",
+        "black": "#000000"
+      }
+    },
+    "base": {
+      "primary": {
+        "value": "#ACECF7"
+      },
+      "secondary": {
+        "value": "#050517"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "#000000"
+      },
+      "secondary": {
+        "value": "#FFFFFF"
+      }
+    },
+    "background": {
+      "value": "#EEEEEE"
+    }
+  }
+}

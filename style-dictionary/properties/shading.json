@@ -1,0 +1,17 @@
+{
+  "shadows": {
+      "base": {
+        "value": "{shadows.base.medium.value}"
+      },
+      "small": {
+        "value": "{palette.shadow.color.black}2px 2px 2px rgba(0, 0, 0, 0.25)"
+      },
+      "medium": {
+        "value": "5px"
+      },
+      "large": {
+        "value": "8px"
+      }
+    }
+}
+

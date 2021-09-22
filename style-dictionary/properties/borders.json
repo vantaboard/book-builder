@@ -1,0 +1,18 @@
+{
+  "border": {
+    "radius": {
+      "base": {
+        "value": "{border.radius.medium.value}"
+      },
+      "small": {
+        "value": "3px"
+      },
+      "medium": {
+        "value": "5px"
+      },
+      "large": {
+        "value": "8px"
+      }
+    }
+  }
+}
