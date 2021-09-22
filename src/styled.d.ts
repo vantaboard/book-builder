@@ -20,10 +20,11 @@ declare module 'styled-components' {
     typography: {
       primary: string;
       secondary: string;
+      base: string;
       small: string;
       medium: string;
       large: string;
-      font: { base: string; },
+      font: { base: string };
     };
 
     palette: {

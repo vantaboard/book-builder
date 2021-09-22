@@ -1,7 +1,7 @@
 import { Html } from '@react-three/drei';
 import React from 'react';
 import { TitleCase } from '../../../../helpers/typography';
-import Input from '../../../Input';
+import Input from '../../../Elements/Input';
 import { book } from '../Book';
 import { SliderProps } from './interface';
 
