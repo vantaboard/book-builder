@@ -1,5 +1,5 @@
+import { Canvas } from '@react-three/fiber';
 import React from 'react';
-import { Canvas } from 'react-three-fiber';
 import { Wrapper } from './styles';
 import Workspace from './Workspace';
 
