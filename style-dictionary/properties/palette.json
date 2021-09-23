@@ -7,7 +7,7 @@
       "color": {
         "black": {
           "hard": { "value": "#000000" },
-          "soft": { "value": "#00000065" }
+          "soft": { "value": "#00000035" }
         }
       }
     },
@@ -79,7 +79,7 @@
         "value": "#FFFFFF"
       },
       "secondary": {
-        "value": "#000000"
+        "value": "{palette.extended.gray.0.value}"
       }
     },
     "background": {
