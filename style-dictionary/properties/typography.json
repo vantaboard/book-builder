@@ -1,15 +1,14 @@
 {
   "typography": {
     "weight": {
-      "light": { "value": "300" }, "regular": { "value": "400" },
-      "medium": { "value": "500" },
-      "semiBold": { "value": "600" },
+      "light": { "value": "300" },
+      "regular": { "value": "400" },
       "bold": { "value": "700" },
-      "extraBold": { "value": "800" }
+      "black": { "value": "900" }
     },
     "family": {
       "base": {
-        "value": "-apple-system, BlinkMacSystemFont, 'Karla', sans-serif"
+        "value": "-apple-system, BlinkMacSystemFont, 'Chivo', sans-serif"
       }
     }
   },
