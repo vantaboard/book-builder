@@ -1,4 +1,5 @@
 export interface ButtonProps {
   primary?: boolean;
-  active?: boolean;
+  border?: boolean;
+  wipe?: boolean;
 }
