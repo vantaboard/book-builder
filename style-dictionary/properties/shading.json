@@ -2,21 +2,20 @@
   "shadows": {
     "blur": {
       "radius": {
-        "hard": { "value": "3px" },
-        "soft": { "value": "6px" }
+        "hard": { "value": "2px" },
+        "soft": { "value": "4px" }
       }
     },
     "offset": {
       "x": {
-        "small": { "value": "3px" },
-        "medium": { "value": "5px" },
-        "large": { "value": "8px" }
+        "small": { "value": "0px" },
+        "medium": { "value": "0px" },
+        "large": { "value": "0px" }
       },
       "y": {
-
-        "small": { "value": "{shadows.offset.x.small.value}" },
-        "medium": { "value": "{shadows.offset.x.medium.value}" },
-        "large": { "value": "{shadows.offset.x.large.value}" }
+        "small": { "value": "3px" },
+        "medium": { "value": "4px" },
+        "large": { "value": "5px" }
       }
     },
     "box": {
