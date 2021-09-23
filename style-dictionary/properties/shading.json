@@ -1,13 +1,47 @@
 {
   "shadows": {
-    "small": {
-      "value": "2px 2px 2px rgba(0, 0, 0, 0.25)"
+    "blur": {
+      "radius": {
+        "hard": { "value": "3px" },
+        "soft": { "value": "6px" }
+      }
     },
-    "medium": {
-      "value": "5px"
+    "offset": {
+      "x": {
+        "small": { "value": "3px" },
+        "medium": { "value": "5px" },
+        "large": { "value": "8px" }
+      },
+      "y": {
+
+        "small": { "value": "{shadows.offset.x.small.value}" },
+        "medium": { "value": "{shadows.offset.x.medium.value}" },
+        "large": { "value": "{shadows.offset.x.large.value}" }
+      }
     },
-    "large": {
-      "value": "8px"
+    "box": {
+      "soft": {
+        "small": {
+          "value": "{shadows.offset.x.small.value} {shadows.offset.y.small.value} {shadows.blur.radius.soft.value} {palette.shadow.color.black.soft.value}"
+        },
+        "medium": {
+          "value": "{shadows.offset.x.medium.value} {shadows.offset.y.medium.value} {shadows.blur.radius.soft.value} {palette.shadow.color.black.soft.value}"
+        },
+        "large": {
+          "value": "{shadows.offset.x.large.value} {shadows.offset.y.large.value} {shadows.blur.radius.soft.value} {palette.shadow.color.black.soft.value}"
+        }
+      },
+      "hard": {
+        "small": {
+          "value": "{shadows.offset.x.small.value} {shadows.offset.y.small.value} {shadows.blur.radius.hard.value} {palette.shadow.color.black.hard.value}"
+        },
+        "medium": {
+          "value": "{shadows.offset.x.medium.value} {shadows.offset.y.medium.value} {shadows.blur.radius.hard.value} {palette.shadow.color.black.hard.value}"
+        },
+        "large": {
+          "value": "{shadows.offset.x.large.value} {shadows.offset.y.large.value} {shadows.blur.radius.hard.value} {palette.shadow.color.black.hard.value}"
+        }
+      }
     }
   }
 }
