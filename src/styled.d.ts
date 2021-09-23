@@ -43,10 +43,8 @@ declare module 'styled-components' {
       weight: {
         light: string;
         regular: string;
-        medium: string;
-        semiBold: string;
         bold: string;
-        extraBold: string;
+        black: string;
       };
     };
 
@@ -57,42 +55,9 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       extended: {
-        blue: [
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string
-        ];
-        pink: [
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string
-        ];
-        gray: [
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string,
-          string
-        ];
+        blue: string[];
+        pink: string[];
+        gray: string[];
       };
     };
   }

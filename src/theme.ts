@@ -43,10 +43,8 @@ export const theme = {
     weight: {
       light: tokens.TypographyWeightLight,
       regular: tokens.TypographyWeightRegular,
-      medium: tokens.TypographyWeightMedium,
-      semiBold: tokens.TypographyWeightSemiBold,
       bold: tokens.TypographyWeightBold,
-      extraBold: tokens.TypographyWeightExtraBold,
+      black: tokens.TypographyWeightBlack,
     },
   },
 
