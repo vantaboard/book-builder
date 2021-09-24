@@ -12,8 +12,10 @@ export default (props: SliderProps) => {
       <Input
         name={name}
         value={value}
-        prefix={TitleCase(name)}
-        suffix={book.units}
+        prefix
+        suffix
+        prefixText={TitleCase(name)}
+        suffixText={book.units}
       ></Input>
     </Html>
   );
