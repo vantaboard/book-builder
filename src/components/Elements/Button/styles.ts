@@ -44,16 +44,14 @@ export const StyledButton = styled('button')<ButtonProps>`
     p.primary ? theme.palette.primary : theme.palette.secondary};
 `;
 
-export const SvgWrapper = styled('div')`
-  position: relative;
-`;
-
-export const SvgOverlay = styled('svg')`
+export const SvgOverlay = styled('svg')<ButtonProps>`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -5px;
+  left: -5px;
+  width: 110%;
+  height: 140%;
+  border-radius: ${(p) =>
+    p.border ? theme.border.radius.small : theme.border.radius.base};
 `;
 
 export const StyledClickOverlay = styled('div')<ButtonProps>`
@@ -63,7 +61,6 @@ export const StyledClickOverlay = styled('div')<ButtonProps>`
   left: 0;
   top: 0;
   position: absolute;
-  border-radius: ${(p) => (p.border ? 0 : theme.border.radius.base)};
 `;
 
 export const Line = styled('path')<ButtonProps>`

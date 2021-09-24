@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, useState } from 'react';
+import React, { HTMLAttributes, useEffect, useState } from 'react';
 import { theme } from '../../../theme';
 import { ButtonProps } from './interface';
 import { Line, StyledButton, StyledClickOverlay, SvgOverlay } from './styles';
@@ -7,6 +7,14 @@ import { Line, StyledButton, StyledClickOverlay, SvgOverlay } from './styles';
 export default (props: HTMLAttributes<HTMLButtonElement> & ButtonProps) => {
   const [border, setBorder] = useState(false);
   const [wipe, setWipe] = useState(false);
+  useEffect(() => {
+    return () => {
+      const int = setInterval(() => {
+        setWipe(true);
+        clearInterval(int);
+      }, 3);
+    };
+  }, [wipe]);
   const { children, primary } = props;
   return (
     <div>
@@ -28,6 +36,7 @@ export default (props: HTMLAttributes<HTMLButtonElement> & ButtonProps) => {
         <div>{children}</div>
         <StyledClickOverlay>
           <SvgOverlay
+            border={border}
             version='1.1'
             xmlns='http://www.w3.org/2000/svg'
             xmlnsXlink='http://www.w3.org/1999/xlink'
