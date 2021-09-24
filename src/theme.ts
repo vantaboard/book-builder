@@ -1,6 +1,5 @@
 import * as tokens from './style-dictionary-dist/variables';
 
-// Define what props.theme will look like
 export const theme = {
   shadows: {
     box: {
@@ -17,7 +16,29 @@ export const theme = {
     },
   },
 
+  animation: {
+    speed: {
+      setInterval: {
+        webkit: tokens.AnimationSpeedSetIntervalWebkit,
+      },
+      interactive: {
+        slug: tokens.AnimationSpeedInteractiveSlug,
+        slow: tokens.AnimationSpeedInteractiveSlow,
+        mild: tokens.AnimationSpeedInteractiveMild,
+        hyper: tokens.AnimationSpeedInteractiveHyper,
+        whoa: tokens.AnimationSpeedInteractiveWhoa,
+      },
+    },
+  },
+
   border: {
+    color: tokens.BorderColor,
+    thickness: {
+      base: tokens.BorderThicknessBase,
+      small: tokens.BorderThicknessSmall,
+      medium: tokens.BorderThicknessMedium,
+      large: tokens.BorderThicknessLarge,
+    },
     radius: {
       base: tokens.BorderRadiusBase,
       small: tokens.BorderRadiusSmall,
@@ -27,6 +48,7 @@ export const theme = {
   },
 
   spacing: {
+    tiny: tokens.SpacingTiny,
     small: tokens.SpacingSmall,
     medium: tokens.SpacingMedium,
     large: tokens.SpacingLarge,
@@ -92,9 +114,28 @@ export const theme = {
         tokens.PaletteExtendedGray9,
       ],
     },
+    background: {
+      base: tokens.PaletteBackgroundBase,
+      paper: tokens.PaletteBackgroundPaper,
+    },
   },
 };
 
 export const gray = theme.palette.extended.gray;
 export const blue = theme.palette.extended.blue;
 export const pink = theme.palette.extended.pink;
+export const shadows = theme.shadows;
+export const border = theme.border;
+export const borderThickness = theme.border.thickness;
+export const borderRadius = theme.border.radius;
+export const spacing = theme.spacing;
+export const typography = theme.typography;
+export const font = theme.typography.font;
+export const weight = theme.typography.weight;
+export const paletteFocus = theme.palette.focus;
+export const highlight = theme.palette.focus.highlight;
+export const primary = theme.palette.primary;
+export const secondary = theme.palette.secondary;
+export const background = theme.palette.background;
+export const animation = theme.animation;
+export const speed = theme.animation.speed;

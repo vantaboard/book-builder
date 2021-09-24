@@ -17,7 +17,29 @@ declare module 'styled-components' {
       };
     };
 
+    animation: {
+      speed: {
+        setInterval: {
+          webkit: string;
+        };
+        interactive: {
+          slug: string;
+          slow: string;
+          mild: string;
+          hyper: string;
+          whoa: string;
+        };
+      };
+    };
+
     border: {
+      color: string;
+      thickness: {
+        base: string;
+        small: string;
+        medium: string;
+        large: string;
+      };
       radius: {
         base: string;
         small: string;
@@ -27,6 +49,7 @@ declare module 'styled-components' {
     };
 
     spacing: {
+      tiny: string;
       small: string;
       medium: string;
       large: string;
@@ -58,6 +81,10 @@ declare module 'styled-components' {
         blue: string[];
         pink: string[];
         gray: string[];
+      };
+      background: {
+        base: string;
+        paper: string;
       };
     };
   }
