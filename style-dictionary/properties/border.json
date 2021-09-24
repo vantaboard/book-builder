@@ -1,0 +1,17 @@
+{
+  "border": {
+    "color": { "value": "{palette.extended.gray.5.value}" },
+    "thickness": {
+      "base": { "value": "{border.thickness.small.value}" },
+      "small": { "value": "2px" },
+      "medium": { "value": "4px" },
+      "large": { "value": "6px" }
+    },
+    "radius": {
+      "base": { "value": "{border.radius.medium.value}" },
+      "small": { "value": "3px" },
+      "medium": { "value": "5px" },
+      "large": { "value": "7px" }
+    }
+  }
+}

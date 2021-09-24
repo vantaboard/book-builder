@@ -12,12 +12,8 @@
       }
     },
     "base": {
-      "primary": {
-        "value": "{palette.extended.blue.7.value}"
-      },
-      "secondary": {
-        "value": "{palette.extended.gray.9.value}"
-      }
+      "primary": { "value": "{palette.extended.blue.7.value}" },
+      "secondary": { "value": "{palette.extended.gray.9.value}" }
     },
     "descriptive": {
       "success": { "value": "" },
@@ -75,15 +71,12 @@
       }
     },
     "text": {
-      "primary": {
-        "value": "#FFFFFF"
-      },
-      "secondary": {
-        "value": "{palette.extended.gray.0.value}"
-      }
+      "primary": { "value": "#FFFFFF" },
+      "secondary": { "value": "{palette.extended.gray.0.value}" }
     },
     "background": {
-      "value": "#EEEEEE"
+      "base": { "value": "#FFFFFF" },
+      "paper": { "value": "#EFEFEF" }
     }
   }
 }
