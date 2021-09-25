@@ -23,11 +23,11 @@ declare module 'styled-components' {
           webkit: string;
         };
         interactive: {
-          slug: string;
-          slow: string;
-          mild: string;
-          hyper: string;
-          whoa: string;
+          slug: number;
+          slow: number;
+          mild: number;
+          hyper: number;
+          whoa: number;
         };
       };
     };
