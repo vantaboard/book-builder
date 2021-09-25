@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import { font } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   * {
+    font-family: ${font.base};
     border-radius: 0;
     border-color: 0;
     border-style: 0;
