@@ -1,48 +1,40 @@
 import styled from 'styled-components';
-import Box from '../Box';
+import { ignoreClicks } from '../../../helpers/styling';
+import { StyledBox } from '../Box/styles';
 import {
   background,
   border,
   borderRadius,
   borderThickness,
-  shadows,
   spacing,
 } from './../../../theme';
+import { Interactive } from './../../Common/Interactive/styles';
 
-const ignoreClicks = () => `
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-`;
-
-export const Wrapper = styled(Box)`
-  border-width: ${borderThickness.base};
+export const Wrapper = styled(StyledBox)`
+  ${Interactive}
   border-radius: ${borderRadius.base};
+  border-width: calc(${borderThickness.base} + 1px);
   border-color: ${border.color};
   border-style: solid;
-  justify-content: space-around;
-  width: calc(100% + 2rem);
-  box-shadow: ${shadows.box.soft.small};
 `;
 
 export const Prefix = styled('span')`
   background-color: ${background.paper};
-  padding: 0 ${spacing.small};
+  padding: 2px ${spacing.small} 0;
   ${ignoreClicks}
 `;
 
-export const StyledInput = styled('input')`
+export const StyledInput = styled('input').attrs({ size: 4 })`
   background-color: ${background.base};
   padding: ${spacing.tiny} ${spacing.small};
-  height: auto;
-  width: calc(100% + 2rem);
+  &:focus {
+    border-color: unset;
+    outline: unset;
+  }
 `;
 
 export const Suffix = styled('span')`
   background-color: ${background.paper};
-  padding: 0 ${spacing.small};
+  padding: 2px ${spacing.small} 0;
   ${ignoreClicks}
 `;

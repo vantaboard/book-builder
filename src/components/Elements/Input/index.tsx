@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import { BuildInputProps, InputProps } from './interface';
 import { Prefix, StyledInput, Suffix, Wrapper } from './styles';
 
@@ -12,7 +12,7 @@ const BuildInput = (props: BuildInputProps) => {
   return <>{input}</>;
 };
 
-export default (props: InputProps & HTMLAttributes<HTMLInputElement>) => {
+export default (props: InputProps) => {
   const { prefix, suffix, prefixText, suffixText, name, value } = props;
   return (
     <Wrapper>
