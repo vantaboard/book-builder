@@ -5,6 +5,7 @@ import Input from '../../../Elements/Input';
 import { book } from '../Book';
 import { SliderProps } from './interface';
 
+// TODO: Make draggable
 export default (props: SliderProps) => {
   const { name, value, pos } = props;
   return (
@@ -12,8 +13,10 @@ export default (props: SliderProps) => {
       <Input
         name={name}
         value={value}
-        prefix={TitleCase(name)}
-        suffix={book.units}
+        prefix
+        suffix
+        prefixText={TitleCase(name)}
+        suffixText={book.units}
       ></Input>
     </Html>
   );

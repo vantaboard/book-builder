@@ -1,14 +1,29 @@
 import React from 'react';
-import { InputProps } from './interface';
+import { BuildInputProps, InputProps } from './interface';
 import { Prefix, StyledInput, Suffix, Wrapper } from './styles';
 
+const BuildInput = (props: BuildInputProps) => {
+  const { prefix, suffix, prefixText, suffixText, children } = props;
+
+  const input: Array<JSX.Element> = [];
+  if (prefix) input.push(<Prefix>{prefixText}</Prefix>);
+  input.push(children as JSX.Element);
+  if (suffix) input.push(<Suffix>{suffixText}</Suffix>);
+  return <>{input}</>;
+};
+
 export default (props: InputProps) => {
-  const { prefix, suffix, name, value } = props;
+  const { prefix, suffix, prefixText, suffixText, name, value } = props;
   return (
     <Wrapper>
-      <Prefix>{prefix}</Prefix>
-      <StyledInput name={name} placeholder={value} />
-      <Suffix>{suffix}</Suffix>
+      <BuildInput
+        prefix={prefix}
+        prefixText={prefixText}
+        suffix={suffix}
+        suffixText={suffixText}
+      >
+        <StyledInput name={name} placeholder={value} />
+      </BuildInput>
     </Wrapper>
   );
 };

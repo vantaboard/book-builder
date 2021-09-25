@@ -1,0 +1,16 @@
+{
+  "animation": {
+    "speed": {
+      "setInterval": {
+        "webkit": { "value": "3s" }
+      },
+      "interactive": {
+        "slug": { "value": 0.8 },
+        "slow": { "value": 0.6 },
+        "mild": { "value": 0.4 },
+        "hyper": { "value": 0.2 },
+        "whoa": { "value": 0.05 }
+      }
+    }
+  }
+}

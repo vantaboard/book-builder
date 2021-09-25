@@ -1,5 +1,4 @@
-export interface ButtonProps {
+import { InteractiveProps } from "./../../Common/Interactive/interface";
+export interface ButtonProps extends InteractiveProps {
   primary?: boolean;
-  border?: boolean;
-  wipe?: boolean;
 }

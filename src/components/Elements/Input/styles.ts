@@ -1,64 +1,40 @@
 import styled from 'styled-components';
-export const Wrapper = styled('div')`
-  border-top: 2px;
-  border-bottom: 2px;
-  border-left: 2px;
-  border-right: 2px;
-  border-radius: 5px;
+import { ignoreClicks } from '../../../helpers/styling';
+import { StyledBox } from '../Box/styles';
+import {
+  background,
+  border,
+  borderRadius,
+  borderThickness,
+  spacing,
+} from './../../../theme';
+import { Interactive } from './../../Common/Interactive/styles';
+
+export const Wrapper = styled(StyledBox)`
+  ${Interactive}
+  border-radius: ${borderRadius.base};
+  border-width: calc(${borderThickness.base} + 1px);
+  border-color: ${border.color};
   border-style: solid;
-  border-color: grey;
-  display: flex;
-  margin-left: 0;
-  padding-left: 0;
-  justify-content: space-around;
-  background-color: white;
-  width: calc(100% + 2rem);
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
 `;
 
 export const Prefix = styled('span')`
-  background-color: grey;
-  border: 0;
-  padding-left: 6px;
-  padding-right: 6px;
-  pointer-events: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  background-color: ${background.paper};
+  padding: 2px ${spacing.small} 0;
+  ${ignoreClicks}
 `;
-export const StyledInput = styled('input')`
-  border: 0;
-  border-right-width: 1px;
-  border-right-color: black;
-  border-right-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: calc(100% + 2rem);
-  margin: 0;
-  background-color: unset;
-  padding-top: 3px;
-  padding-bottom: 3px;
+
+export const StyledInput = styled('input').attrs({ size: 4 })`
+  background-color: ${background.base};
+  padding: ${spacing.tiny} ${spacing.small};
+  &:focus {
+    border-color: unset;
+    outline: unset;
+  }
 `;
+
 export const Suffix = styled('span')`
-  border: 0;
-  background-color: grey;
-  padding-top: 0;
-  margin-top: 0;
-  padding-left: 6px;
-  padding-right: 6px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  background-color: ${background.paper};
+  padding: 2px ${spacing.small} 0;
+  ${ignoreClicks}
 `;
