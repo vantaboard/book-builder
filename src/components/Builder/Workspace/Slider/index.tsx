@@ -5,6 +5,7 @@ import Input from '../../../Elements/Input';
 import { book } from '../Book';
 import { SliderProps } from './interface';
 
+// TODO: Make draggable
 export default (props: SliderProps) => {
   const { name, value, pos } = props;
   return (
