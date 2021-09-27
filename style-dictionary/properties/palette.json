@@ -76,7 +76,7 @@
     },
     "background": {
       "base": { "value": "#FFFFFF" },
-      "paper": { "value": "#EFEFEF" }
+      "paper": { "value": "#ECECEC" }
     }
   }
 }
