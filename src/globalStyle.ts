@@ -3,7 +3,7 @@ import { font } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: ${font.base};
+    font-family: 'Chivo';
     border-radius: 0;
     border-color: 0;
     border-style: 0;
