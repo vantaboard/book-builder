@@ -56,6 +56,12 @@ declare module 'styled-components' {
     };
 
     typography: {
+      lineHeight: {
+        base: string;
+        small: string;
+        medium: string;
+        large: string;
+      };
       primary: string;
       secondary: string;
       base: string;

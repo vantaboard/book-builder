@@ -55,6 +55,12 @@ export const theme = {
   },
 
   typography: {
+    lineHeight: {
+      base: tokens.TypographyLineHeightBase,
+      small: tokens.TypographyLineHeightSmall,
+      medium: tokens.TypographyLineHeightMedium,
+      large: tokens.TypographyLineHeightLarge,
+    },
     primary: tokens.PaletteTextPrimary,
     secondary: tokens.PaletteTextSecondary,
     base: tokens.SizeTextBase,

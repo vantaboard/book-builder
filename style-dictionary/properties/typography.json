@@ -1,5 +1,11 @@
 {
   "typography": {
+    "lineHeight": {
+      "base": { "value": "{typography.lineHeight.medium.value}" },
+      "small": { "value": "23px" },
+      "medium": { "value": "25px" },
+      "large": { "value": "26px" }
+    },
     "weight": {
       "light": { "value": "300" },
       "regular": { "value": "400" },
@@ -15,9 +21,9 @@
   "size": {
     "text": {
       "base": { "value": "{size.text.medium.value}" },
-      "small": { "value": "0.75" },
-      "medium": { "value": "1" },
-      "large": { "value": "1.5" }
+      "small": { "value": "13px" },
+      "medium": { "value": "14px" },
+      "large": { "value": "15px" }
     }
   }
 }
