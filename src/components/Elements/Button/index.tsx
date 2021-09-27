@@ -6,29 +6,20 @@ import { StyledButton } from './styles';
 
 // TODO: Animate button with React-spring
 export default (props: HTMLAttributes<HTMLButtonElement> & ButtonProps) => {
-  const [border, setBorder] = useState(false);
-  const [wipe, setWipe] = useState(false);
+  const [interact, setBorder] = useState(false);
   const handleClick = () => {
-    setBorder(false);
     setWipe(false);
-    setBorder(true);
     setWipe(true);
     const int = setInterval(() => {
-      setBorder(false);
       setWipe(false);
       clearInterval(int);
     }, speed.interactive.hyper * 1000);
   };
-  const { children, primary } = props;
+  const { label, primary } = props;
 
   return (
-    <StyledButton
-      onClick={handleClick}
-      border={border}
-      wipe={wipe}
-      primary={primary}
-    >
-      {children}
+    <StyledButton border={border} wipe={wipe} primary={primary} onClick={handleClick}>
+      {label}
       <Wipe border={border} wipe={wipe} />
     </StyledButton>
   );
