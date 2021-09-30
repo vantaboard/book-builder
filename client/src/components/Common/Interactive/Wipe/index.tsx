@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { highlight } from '../../../../theme';
 import { InteractiveProps } from '../interface';
 import { Line, Overlay, Wipe } from './styles';
+import * as tokens from 'style-dictionary-dist/variables';
 
 const wipePath = `m88.31776,92.61682l-83.08411,-82.8972c0.09346,0.09346 0.28037,
                   -6.26168 6.26168,-3.45795c5.98131,2.80374 81.86916,81.86916
@@ -39,7 +39,7 @@ export default (props: InteractiveProps) => {
           width='5%'
           height='100%'
           filter='url(#filter)'
-          fill={highlight}
+          fill={tokens.PaletteFocusHighlight}
         />
       </Wipe>
     </Overlay>

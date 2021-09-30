@@ -1,0 +1,10 @@
+{
+  "size": {
+    "typography": {
+      "base": { "value": "{size.typography.medium.value}" },
+      "small": { "value": "13px" },
+      "medium": { "value": "14px" },
+      "large": { "value": "15px" }
+    }
+  }
+}

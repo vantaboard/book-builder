@@ -2,7 +2,7 @@
   "animation": {
     "speed": {
       "setInterval": {
-        "webkit": { "value": "3s" }
+        "webkit": { "value": 3 }
       },
       "interactive": {
         "slug": { "value": 0.8 },

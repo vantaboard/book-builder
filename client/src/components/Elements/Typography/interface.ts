@@ -1,10 +1,9 @@
-import { theme } from './../../../theme';
-const weight = theme.typography.weight;
+import * as tokens from 'style-dictionary-dist/variables';
 
 export interface TypographyProps {
   weight?:
-    | typeof weight.light
-    | typeof weight.regular
-    | typeof weight.bold
-    | typeof weight.black;
+    | typeof tokens.TypographyWeightLight
+    | typeof tokens.TypographyWeightRegular
+    | typeof tokens.TypographyWeightBold
+    | typeof tokens.TypographyWeightBlack;
 }

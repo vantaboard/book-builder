@@ -1,36 +1,29 @@
 import styled from 'styled-components';
-import { ignoreClicks } from '../../../helpers/styling';
-import { StyledBox } from '../Box/styles';
-import {
-  background,
-  border,
-  borderRadius,
-  borderThickness,
-  spacing,
-  typography,
-} from './../../../theme';
-import { Interactive } from './../../Common/Interactive/styles';
+import { StyledBox } from 'components/Elements/Box/styles';
+import * as tokens from 'style-dictionary-dist/variables';
+import { Interactive } from 'components/Common/Interactive/styles';
+import { ignoreClicks } from 'helpers/styling';
 
 export const Wrapper = styled(StyledBox)`
   ${Interactive}
-  border-radius: ${borderRadius.base};
-  border-width: calc(${borderThickness.base} + 1px);
-  border-color: ${border.color};
-  color: ${typography.secondary};
+  border-radius: ${tokens.BorderRadiusSmall};
+  border-width: calc(${tokens.BorderThicknessSmall} + 1px);
+  border-color: ${tokens.PaletteBorder};
+  color: ${tokens.PaletteTypographySecondary};
   border-style: solid;
 `;
 
 export const Prefix = styled('span')`
-  background-color: ${background.paper};
-  padding: 2px ${spacing.small} 0;
+  background-color: ${tokens.PaletteBackgroundPaper};
+  padding: 2px ${tokens.SpacingSmall} 0;
   ${ignoreClicks}
 `;
 
 export const Suffix = Prefix;
 
 export const StyledInput = styled('input').attrs({ size: 4 })`
-  background-color: ${background.base};
-  padding: ${spacing.tiny} ${spacing.small};
+  background-color: ${tokens.PaletteBackgroundBase};
+  padding: ${tokens.SpacingTiny} ${tokens.SpacingSmall};
   &:focus {
     border-color: unset;
     outline: unset;
