@@ -1,7 +1,7 @@
+import { book } from 'components/Builder/Workspace/Book';
 import React from 'react';
-import { book } from '..';
 import { FrameProps } from './interface';
-import Material from './Material';
+import Material from 'components/Builder/Workspace/Book/Frame/Material';
 
 export default (props: FrameProps) => {
   const { front } = props;

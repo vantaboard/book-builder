@@ -1,6 +1,7 @@
 import React from 'react';
 import { DoubleSide } from 'three';
+import * as tokens from "style-dictionary-dist/variables"
 
 export default () => {
-  return <meshBasicMaterial color='grey' side={DoubleSide} />;
+  return <meshBasicMaterial color={tokens.PaletteExtendedGray5} side={DoubleSide} />;
 };

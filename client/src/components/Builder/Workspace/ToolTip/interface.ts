@@ -1,4 +1,5 @@
-import { vector } from './../../../../Types/components';
+import { vector } from "Types/components";
+
 export interface ToolTipProps {
   children: any;
   pos: vector;

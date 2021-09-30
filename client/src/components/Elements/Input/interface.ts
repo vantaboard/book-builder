@@ -1,5 +1,5 @@
+import { Weaken } from "helpers/typings";
 import { HTMLAttributes } from "react";
-import { Weaken } from "../../../helpers/typings";
 
 export interface BuildInputProps extends Weaken<HTMLAttributes<HTMLInputElement>, 'prefix'> {
   prefix?: boolean;

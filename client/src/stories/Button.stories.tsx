@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 import React from 'react';
-import Button from '../components/Elements/Button';
-import { ButtonProps } from '../components/Elements/Button/interface';
+import Button from 'components/Elements/Button';
+import { ButtonProps } from 'components/Elements/Button/interface';
 // Button.stories.ts | Button.stories.tsx
 
 export default {

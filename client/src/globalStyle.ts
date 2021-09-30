@@ -1,13 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import { font } from './theme';
+import * as tokens from 'style-dictionary-dist/variables';
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Chivo';
+    font-family: ${tokens.TypographyFamilyBase};
     border-radius: 0;
-    border-color: 0;
-    border-style: 0;
-    border-width: 0;
+    border: 0;
     padding: 0;
     margin: 0;
   }

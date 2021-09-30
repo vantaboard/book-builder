@@ -1,38 +1,34 @@
+import { Interactive } from 'components/Common/Interactive/styles';
+import * as tokens from 'style-dictionary-dist/variables';
 import styled from 'styled-components';
-import {
-  border,
-  borderRadius,
-  borderThickness,
-  primary,
-  secondary,
-  spacing,
-  typography,
-  weight,
-} from './../../../theme';
-import { Interactive } from './../../Common/Interactive/styles';
 import { ButtonProps } from './interface';
 
 export const StyledButton = styled('button')<ButtonProps>`
   ${Interactive}
   z-index: 0;
   position: relative;
-  border-radius: ${(p) => (p.border ? borderRadius.small : borderRadius.base)};
+  border-radius: ${(p) =>
+    p.border ? tokens.BorderRadiusSmall : tokens.BorderRadiusBase};
   letter-spacing: 0.5px;
   text-align: center;
   padding-top: auto;
   padding-bottom: auto;
-  padding-left: ${spacing.medium};
-  padding-right: ${spacing.medium};
-  margin-top: ${spacing.small};
-  margin-bottom: ${spacing.small};
-  margin-left: ${spacing.medium};
-  margin-right: ${spacing.medium};
-  height: ${spacing.large};
+  padding-left: ${tokens.SpacingMedium};
+  padding-right: ${tokens.SpacingMedium};
+  margin-top: ${tokens.SpacingMedium};
+  margin-bottom: ${tokens.SpacingMedium};
+  margin-left: ${tokens.SpacingMedium};
+  margin-right: ${tokens.SpacingMedium};
+  height: ${tokens.SpacingLarge};
   width: auto;
-  font-weight: ${weight.regular};
+  font-weight: ${tokens.TypographyWeightRegular};
   border-style: solid;
-  border-width: ${borderThickness.base};
-  border-color: ${border.color};
-  color: ${(p) => (p.primary ? typography.primary : typography.secondary)};
-  background-color: ${(p) => (p.primary ? primary : secondary)};
+  border-width: ${tokens.BorderThicknessBase};
+  border-color: ${tokens.PaletteBorder};
+  color: ${(p) =>
+    p.primary
+      ? tokens.PaletteTypographyPrimary
+      : tokens.PaletteTypographySecondary};
+  background-color: ${(p) =>
+    p.primary ? tokens.PaletteBasePrimary : tokens.PaletteBaseSecondary};
 `;
