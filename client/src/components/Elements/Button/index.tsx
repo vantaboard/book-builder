@@ -1,8 +1,8 @@
+import Wipe from 'components/Common/Interactive/Wipe';
 import React, { HTMLAttributes, useState } from 'react';
-import { speed } from '../../../theme';
-import Wipe from '../../Common/Interactive/Wipe';
 import { ButtonProps } from './interface';
 import { StyledButton } from './styles';
+import * as tokens from 'style-dictionary-dist/variables';
 
 // TODO: Animate button with React-spring
 export default (props: HTMLAttributes<HTMLButtonElement> & ButtonProps) => {
@@ -13,7 +13,7 @@ export default (props: HTMLAttributes<HTMLButtonElement> & ButtonProps) => {
     const int = setInterval(() => {
       setWipe(false);
       clearInterval(int);
-    }, speed.interactive.hyper * 1000);
+    }, tokens.AnimationSpeedInteractiveHyper * 1000);
   };
   const { label, primary } = props;
 

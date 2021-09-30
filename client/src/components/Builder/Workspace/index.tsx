@@ -1,7 +1,7 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import React from 'react';
-import Book, { book } from './Book';
-import Slider from './Slider';
+import Book, { book } from 'components/Builder/Workspace/Book';
+import Slider from 'components/Builder/Workspace/Slider';
 
 const Camera = () => <PerspectiveCamera position={[20, 2, 2]} makeDefault />;
 

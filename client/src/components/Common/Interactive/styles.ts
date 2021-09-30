@@ -1,15 +1,14 @@
-import { borderThickness, highlight, shadows, speed } from '../../../theme';
-
+import * as tokens from 'style-dictionary-dist/variables';
 export const Interactive = `
-  transition: border-radius ${speed.interactive.hyper}s ease-in-out,
-    background-color ${speed.interactive.hyper}s ease-in-out,
-    box-shadow ${speed.interactive.hyper}s ease-in-out;
+  transition: border-radius ${tokens.AnimationSpeedInteractiveHyper}s ease-in-out,
+    background-color ${tokens.AnimationSpeedInteractiveHyper}s ease-in-out,
+    box-shadow ${tokens.AnimationSpeedInteractiveHyper}s ease-in-out;
   &:focus-within {
-    border-color: ${highlight};
-    outline: ${borderThickness.small} solid ${highlight};
-    box-shadow: ${shadows.box.soft.small};
+    border-color: ${tokens.PaletteFocusHighlight};
+    outline: ${tokens.BorderThicknessSmall} solid ${tokens.PaletteFocusHighlight};
+    box-shadow: ${tokens.ShadowsBoxSoftSmall};
   }
   &:hover {
-    box-shadow: ${shadows.box.soft.small};
+    box-shadow: ${tokens.ShadowsBoxSoftSmall};
   }
 `;

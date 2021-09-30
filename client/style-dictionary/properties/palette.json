@@ -1,5 +1,6 @@
 {
   "palette": {
+    "border": { "value": "{palette.extended.gray.5.value}" },
     "focus": {
       "highlight": { "value": "#ADBDEC" }
     },
@@ -70,7 +71,7 @@
         "0": { "value": "#171717" }
       }
     },
-    "text": {
+    "typography": {
       "primary": { "value": "#FFFFFF" },
       "secondary": { "value": "{palette.extended.gray.0.value}" }
     },

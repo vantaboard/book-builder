@@ -1,8 +1,8 @@
 import { Html } from '@react-three/drei';
+import Input from 'components/Elements/Input';
+import { TitleCase } from 'helpers/typography';
 import React from 'react';
-import { TitleCase } from '../../../../helpers/typography';
-import Input from '../../../Elements/Input';
-import { book } from '../Book';
+import { book } from 'components/Builder/Workspace/Book';
 import { SliderProps } from './interface';
 
 // TODO: Make draggable

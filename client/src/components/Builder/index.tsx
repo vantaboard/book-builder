@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import React from 'react';
 import { Wrapper } from './styles';
-import Workspace from './Workspace';
+import Workspace from 'components/Builder/Workspace';
 
 export default () => {
   return (
