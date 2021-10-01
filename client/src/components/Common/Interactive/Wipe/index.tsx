@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import * as tokens from 'style-dictionary-dist/variables';
 import { InteractiveProps } from '../interface';
 import { Line, Overlay, Wipe } from './styles';
-import * as tokens from 'style-dictionary-dist/variables';
 
-const wipePath = `m88.31776,92.61682l-83.08411,-82.8972c0.09346,0.09346 0.28037,
-                  -6.26168 6.26168,-3.45795c5.98131,2.80374 81.86916,81.86916
-                  81.7757,81.7757c0.09346,0.09346 -0.09346,4.39252 -4.95327,
-                  4.57944z`;
+const wipePath = `M 100,100V95L0,0v5`;
 
 export default (props: InteractiveProps) => {
-  const { border, wipe } = props;
+  const { interact } = props;
   return (
     <Overlay>
       <Wipe
-        border={border}
+        interact={interact}
         version='1.1'
         xmlns='http://www.w3.org/2000/svg'
         xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -33,8 +30,7 @@ export default (props: InteractiveProps) => {
         </defs>
         <Line
           d={wipePath}
-          border={border}
-          wipe={wipe}
+          interact={interact}
           x='95%'
           width='5%'
           height='100%'

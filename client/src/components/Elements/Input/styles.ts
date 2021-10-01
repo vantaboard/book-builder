@@ -1,11 +1,14 @@
-import styled from 'styled-components';
-import { StyledBox } from 'components/Elements/Box/styles';
-import * as tokens from 'style-dictionary-dist/variables';
+import { InteractiveBox } from 'components/Common/Interactive/InteractiveBox/styles';
+import { InteractiveProps } from 'components/Common/Interactive/interface';
 import { Interactive } from 'components/Common/Interactive/styles';
 import { ignoreClicks } from 'helpers/styling';
+import * as tokens from 'style-dictionary-dist/variables';
+import styled from 'styled-components';
 
-export const Wrapper = styled(StyledBox)`
+export const Wrapper = styled(InteractiveBox)<InteractiveProps>`
   ${Interactive}
+  border-radius: ${(p) =>
+    p.interact ? tokens.BorderRadiusSmall : tokens.BorderRadiusBase};
   border-radius: ${tokens.BorderRadiusSmall};
   border-width: calc(${tokens.BorderThicknessSmall} + 1px);
   border-color: ${tokens.PaletteBorder};
