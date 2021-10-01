@@ -1,26 +1,20 @@
+import { handleInteract } from 'components/Common/Interactive/handlers';
 import Wipe from 'components/Common/Interactive/Wipe';
-import React, { HTMLAttributes, useState } from 'react';
+import React, { HTMLAttributes } from 'react';
 import { ButtonProps } from './interface';
 import { StyledButton } from './styles';
-import * as tokens from 'style-dictionary-dist/variables';
 
-// TODO: Animate button with React-spring
 export default (props: HTMLAttributes<HTMLButtonElement> & ButtonProps) => {
-  const [interact, setBorder] = useState(false);
-  const handleClick = () => {
-    setWipe(false);
-    setWipe(true);
-    const int = setInterval(() => {
-      setWipe(false);
-      clearInterval(int);
-    }, tokens.AnimationSpeedInteractiveHyper * 1000);
-  };
   const { label, primary } = props;
-
+  const { click, interact } = handleInteract();
   return (
-    <StyledButton border={border} wipe={wipe} primary={primary} onClick={handleClick}>
+    <StyledButton
+      interact={interact}
+      primary={primary}
+      onClick={click}
+    >
       {label}
-      <Wipe border={border} wipe={wipe} />
+      <Wipe interact={interact} />
     </StyledButton>
   );
 };
