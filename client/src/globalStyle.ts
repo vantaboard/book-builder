@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
 import * as tokens from 'style-dictionary-dist/variables';
+import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
   * {
     font-family: ${tokens.TypographyFamilyBase};
     border-radius: 0;
@@ -10,5 +10,3 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 `;
-
-export default GlobalStyle;
