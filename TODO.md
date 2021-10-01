@@ -6,6 +6,7 @@ Project Description
 
 ### Todo
 
+- [ ] Use keys for sliders  
 - [ ] Add a notouch flag to all interactables with design tokens that give a noticable off status  
 - [ ] Correct units of seconds in design tokens for animation  
 - [ ] Make sliders draggable  
@@ -14,9 +15,9 @@ Project Description
 
 ### In Progress
 
-- [ ] Finish creation of the interact component  
 
 ### Done ✓
 
+- [x] Finish creation of the interact component  
 - [x] Use Redux for state management  
 
