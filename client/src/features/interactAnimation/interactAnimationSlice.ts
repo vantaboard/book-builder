@@ -21,6 +21,7 @@ export const interactAnimationSlice = createSlice({
 
 export const { toggle } = interactAnimationSlice.actions;
 
-export const selectCount = (state: RootState) => state.interactAnimation.value;
+export const selectInteract = (state: RootState) =>
+  state.interactAnimation.value;
 
 export default interactAnimationSlice.reducer;

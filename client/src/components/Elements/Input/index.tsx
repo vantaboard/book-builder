@@ -1,5 +1,7 @@
-import { handleInteract } from 'components/Common/Interactive/handlers';
+import { selectInteract } from 'features/interactAnimation/interactAnimationSlice';
 import React from 'react';
+import { useSelector } from 'react-redux';
+import ButtonBase from '../ButtonBase';
 import { BuildInputProps, InputProps } from './interface';
 import { Prefix, StyledInput, Suffix, Wrapper } from './styles';
 
@@ -14,17 +16,20 @@ const BuildInput = (props: BuildInputProps) => {
 
 export default (props: InputProps) => {
   const { prefix, suffix, prefixText, suffixText, name, value } = props;
-  const { click, interact } = handleInteract();
+
+  const interact: boolean = useSelector(selectInteract);
   return (
     <Wrapper interact={interact}>
-      <BuildInput
-        prefix={prefix}
-        prefixText={prefixText}
-        suffix={suffix}
-        suffixText={suffixText}
-      >
-        <StyledInput onClick={click} name={name} value={value} />
-      </BuildInput>
+      <ButtonBase>
+        <BuildInput
+          prefix={prefix}
+          prefixText={prefixText}
+          suffix={suffix}
+          suffixText={suffixText}
+        >
+          <StyledInput name={name} value={value} />
+        </BuildInput>
+      </ButtonBase>
     </Wrapper>
   );
 };
