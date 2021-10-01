@@ -8,7 +8,7 @@ export const StyledButton = styled('button')<ButtonProps>`
   z-index: 0;
   position: relative;
   border-radius: ${(p) =>
-    p.border ? tokens.BorderRadiusSmall : tokens.BorderRadiusBase};
+    p.interact ? tokens.BorderRadiusSmall : tokens.BorderRadiusBase};
   letter-spacing: 0.5px;
   text-align: center;
   padding-top: auto;
