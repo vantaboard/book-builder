@@ -1,9 +1,9 @@
+import Builder from 'components/Builder';
 import React from 'react';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import Builder from 'components/Builder';
 
 // TODO: Add container with better margins
-const App = () => (
+export default () => (
   <BrowserRouter>
     <div>
       <ul>
@@ -20,5 +20,3 @@ const App = () => (
     </div>
   </BrowserRouter>
 );
-
-export default App;
