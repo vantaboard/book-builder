@@ -1,6 +1,6 @@
 import * as tokens from 'style-dictionary-dist/variables';
 import styled from 'styled-components';
-import { InteractiveProps } from '../interface';
+import { InteractiveProps } from './../interface';
 
 export const Wipe = styled('svg')<InteractiveProps>`
   clip-path: border-box;
@@ -13,7 +13,7 @@ export const Wipe = styled('svg')<InteractiveProps>`
   top: 0;
 `;
 
-export const Overlay = styled('div')<InteractiveProps>`
+export const Overlay = styled('div')`
   position: absolute;
   height: 100%;
   width: 100%;
@@ -24,7 +24,7 @@ export const Overlay = styled('div')<InteractiveProps>`
 
 export const Line = styled('path')<InteractiveProps>`
   transition: ease-in-out
-    ${(p) => (p.interact ? `${tokens.AnimationSpeedInteractiveHyper}s` : '0s')}
+    ${(p) => (p.interact ? `${tokens.AnimationSpeedInteractiveHyper}s` : `${tokens.AnimationSpeedInteractiveHyper}s`)}
     transform;
   transform: translate(
     ${(p) => (p.interact ? '100%' : '-100%')},

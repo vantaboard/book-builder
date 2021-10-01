@@ -1,12 +1,12 @@
+import { selectInteract } from 'features/interactAnimation/interactAnimationSlice';
+import { useAppSelector } from 'hooks';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import * as tokens from 'style-dictionary-dist/variables';
-import { InteractiveProps } from '../interface';
 import { Line, Overlay, Wipe } from './styles';
 
-const wipePath = `M 100,100V95L0,0v5`;
-
-export default (props: InteractiveProps) => {
-  const { interact } = props;
+export default () => {
+  const interact = useSelector(selectInteract);
   return (
     <Overlay>
       <Wipe
@@ -29,8 +29,8 @@ export default (props: InteractiveProps) => {
           </filter>
         </defs>
         <Line
-          d={wipePath}
           interact={interact}
+          d='M 100,100V95L0,0v5'
           x='95%'
           width='5%'
           height='100%'

@@ -1,4 +1,5 @@
 import * as tokens from 'style-dictionary-dist/variables';
+
 export const Interactive = `
   transition: border-radius ${tokens.AnimationSpeedInteractiveHyper}s ease-in-out,
     background-color ${tokens.AnimationSpeedInteractiveHyper}s ease-in-out,
