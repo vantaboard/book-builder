@@ -6,13 +6,17 @@ Project Description
 
 ### Todo
 
+- [ ] Add a notouch flag to all interactables with design tokens that give a noticable off status  
+- [ ] Correct units of seconds in design tokens for animation  
+- [ ] Make sliders draggable  
 - [ ] Document code with JSDoc  
-- [ ] Use Redux for state management  
 - [ ] Add concurrently for style-dictionary building and storybook + dev server serving  
 
 ### In Progress
 
+- [ ] Finish creation of the interact component  
 
 ### Done ✓
 
+- [x] Use Redux for state management  
 
