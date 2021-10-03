@@ -1,5 +1,7 @@
 # Book Builder
 
+![demonstration](.ghimages/gifs/demonstration.gif)
+
 ## 👠 Features
 
 - Minimal configuration needed
@@ -8,8 +10,6 @@
 - Batch creation
 - ThreeJS viewer
 - glTF export
-
-<br />
 
 ## 🔧 Install
 
@@ -41,8 +41,6 @@ $ yarn install
 $ yarn start
 ```
 
-<br />
-
 ## 🧱 Stack
 
 - [Jest <img src=".ghimages/icons/jest/favicon.ico" alt="Jest" height="10"/>](https://github.com/facebook/jest)
@@ -55,11 +53,9 @@ $ yarn start
 - [TypeScript <img src=".ghimages/icons/typescript/favicon.ico" alt="TypeScript" height="10"/>](https://github.com/microsoft/TypeScript)
 - [Vite <img src=".ghimages/icons/vite/logo.svg" alt="Vite" height="10"/>](https://github.com/vitejs/vite)
 
-<br />
-
 ### 🧑‍🤝‍🧑 Contributing
 
-As this project is to show my skills as a web developer, contributions to the project are strictly limited to commits from myself; however, feedback is welcome. You are also free to fork the project and use it as a template for your own development.
+To contribute to this project, make a pull request to <https://github.com/blackboardd/xps-upcharge>.
 
 ### ⚖️ License
 
