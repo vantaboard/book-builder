@@ -31,7 +31,7 @@
 
 ## Changelog
 
-If you have recently updated, please read the [changelog](https://github.com/blackboardd/yarn-project-template/blob/main/docs/CHANGELOG.md) for details of what has changed.
+If you have recently updated, please read the [changelog](/docs/CHANGELOG.md) for details of what has changed.
 
 ## 🧑‍🤝‍🧑 Contributing
 
