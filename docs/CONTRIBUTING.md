@@ -1,10 +1,10 @@
-# Contributing to Yarn Project Template
+# Contributing to Book Builder
 
 Here are some of the guidelines to follow if you intend to contribute!
 
 ## Code of Conduct
 
-Yarn Project Template uses [Contributor Covenant](https://www.contributor-covenant.org/). Failure to adhere to these standards will result in removal of contributions from the project.
+Book Builder uses [Contributor Covenant](https://www.contributor-covenant.org/). Failure to adhere to these standards will result in removal of contributions from the project.
 
 ## Installation
 [npm <img src="/.github/images/icons/npm/b0f1a8318363185cc2ea6a40ac23eeb2.png" alt="npm" height="10"/>](https://github.com/npm/cli):
