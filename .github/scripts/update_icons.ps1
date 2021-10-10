@@ -1,4 +1,4 @@
-Push-Location ../.ghimages/icons
+Push-Location ../images/icons
 $dirs = Get-ChildItem | ForEach-Object $_ { $_.Name }
 
 $dirs | ForEach-Object $_ {
