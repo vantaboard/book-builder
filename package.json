@@ -1,0 +1,176 @@
+{
+  "name": "book-builder",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:blackboardd/book-builder.git"
+  },
+  "author": "blackboardd <86866786+blackboardd@users.noreply.github.com>",
+  "files": [
+    "dist/**/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/blackboardd/book-builder/issues"
+  },
+  "homepage": "https://github.com/blackboardd/book-builder#readme",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "vite",
+    "build": "yarn build:vite && yarn build:typescript && yarn build:storybook && yarn build:dictionary",
+    "build:vite": "vite build",
+    "build:dictionary": "style-dictionary build",
+    "build:storybook": "build-storybook -s public -o dist/storybook",
+    "build:tsc": "tsc",
+    "format": "yarn prettier -- --write && yarn lint",
+    "format:lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
+    "format:prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
+    "check": "yarn check:tsc && yarn check:format",
+    "check:tsc": "tsc --pretty --noEmit",
+    "check:format": "yarn prettier -- --list-different",
+    "semantic-release": "semantic-release",
+    "start": "yarn start:vite && yarn start:storybook && start:tsnode",
+    "start:vite": "vite preview",
+    "start:tsnode": "ts-node ./src/server/index.ts",
+    "start:storybook": "start-storybook -p 6006",
+    "test": "yarn test:jest && yarn test:cypress",
+    "test:jest": "jest",
+    "test:cypress": "cypress run"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/npm": "^8.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.2",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/react": "^6.3.10",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.3.0",
+    "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.13.2",
+    "body-parser": "^1.19.0",
+    "commitizen": "^4.2.4",
+    "core-js": "^3.18.2",
+    "css-loader": "^6.4.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv-cli": "^4.0.0",
+    "esbuild-register": "^3.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.4",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.2",
+    "jest": "^27.2.5",
+    "lint-staged": "^11.2.3",
+    "mini-css-extract-plugin": "^2.4.2",
+    "msw": "^0.35.0",
+    "nanoid": "^3.1.29",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-error-boundary": "^3.1.3",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.17.2",
+    "react-query": "^3.26.0",
+    "react-query-auth": "^1.1.0",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^18.0.0",
+    "shelljs": "^0.8.4",
+    "storybook": "^6.3.10",
+    "style-dictionary": "^3.0.2",
+    "style-loader": "^3.3.0",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "type-fest": "^2.3.4",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "web-vitals": "^2.1.1"
+  },
+  "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.4.1",
+    "@mdx-js/react": "^1.6.22",
+    "@react-three/drei": "^7.12.5",
+    "@react-three/fiber": "^7.0.7",
+    "@sentry/node": "^6.13.3",
+    "@sentry/tracing": "^6.13.3",
+    "@storybook/node-logger": "^6.3.10",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@types/react": "^17.0.27",
+    "@types/react-helmet": "^6.1.3",
+    "@types/react-router-dom": "^5.3.1",
+    "@types/three": "^0.133.0",
+    "axios": "^0.22.0",
+    "esbuild": "^0.13.4",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-jest-dom": "^3.9.2",
+    "eslint-plugin-testing-library": "^4.12.4",
+    "jsonwebtoken": "^8.5.1",
+    "polished": "^4.1.3",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "styled-components": "^5.3.1",
+    "three": "^0.133.0",
+    "vite-plugin-ssr": "^0.3.1",
+    "vite-tsconfig-paths": "^3.3.14",
+    "zod": "^3.9.8"
+  },
+  "husky": {
+    "hooks": {
+      "prepare": "husky install",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "yarn lint"
+    ]
+  }
+}

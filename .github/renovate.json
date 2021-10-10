@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": false,
+  "commitMessageAction": "Bump",
+  "commitMessageExtra": "to {{newValue}}",
+  "commitMessageTopic": "{{depName}}",
+  "dependencyDashboard": true,
+  "rebaseWhen": "conflicted",
+  "ignoreDeps": [],
+  "labels": ["dependencies"],
+  "timezone": "UTC"
+}

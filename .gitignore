@@ -1,11 +1,14 @@
+# node modules
 node_modules
-.DS_Store
+
+# build
 dist
-dist-ssr
-*.local
-yarn.lock
-package.lock
+
+# log files
 *.log
-storybook-static
-.history
-client/src/style-dictionary-dist/
+
+# environment
+.env
+
+# style dictionary build
+src/style-dictionary-dist

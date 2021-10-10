@@ -1,6 +1,12 @@
-# Book Builder
+<h1 align="center">Book Builder</h1>
 
-![demonstration](.ghimages/gifs/demonstration.gif)
+<div align="center">
+
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/blackboardd/book-builder/blob/main/LICENSE) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Renovate status](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://github.com/blackboardd/yarn-project-template/issues/1) [![Follow on Twitter](https://img.shields.io/twitter/follow/blkboardd.svg?label=follow+blkboardd)](https://twitter.com/blkboardd)
+
+</div>
+
+![demonstration](.github/images/gifs/demonstration.gif)
 
 ## 👠 Features
 
@@ -11,54 +17,26 @@
 - ThreeJS viewer
 - glTF export
 
-## 🔧 Install
-
-[npm <img src=".ghimages/icons/npm/b0f1a8318363185cc2ea6a40ac23eeb2.png" alt="npm" height="10"/>](https://github.com/npm/cli):
-
-```shell
-# Clone repo
-$ git clone https://github.com/blackboardd/book-builder.git
-$ cd book-builder
-
-# Install dependencies
-$ npm install
-
-# Start dev server
-$ npm start
-```
-
-[yarn <img src=".ghimages/icons/yarn/icon-48x48.png" alt="yarn" height="10"/>](https://github.com/yarnpkg/yarn):
-
-```shell
-# Clone repo
-$ git clone https://github.com/blackboardd/book-builder.git
-$ cd book-builder
-
-# Install dependencies
-$ yarn install
-
-# Start dev server
-$ yarn start
-```
-
 ## 🧱 Stack
 
-- [Jest <img src=".ghimages/icons/jest/favicon.ico" alt="Jest" height="10"/>](https://github.com/facebook/jest)
-- [Lottie <img src=".ghimages/icons/lottie/favicon-32x32.png" alt="Lottie" height="10"/>](https://lottiefiles.com/)
-- [React <img src=".ghimages/icons/react/favicon-32x32.png" alt="React" height="10"/>](https://github.com/facebook/react)
-- [Recoil <img src=".ghimages/icons/recoil/favicon.png" alt="Recoil" height="10"/>](https://github.com/facebookexperimental/Recoil)
-- [Storybook <img src=".ghimages/icons/storybook/icon-storybook.png" alt="Storybook" height="10"/>](https://github.com/storybookjs/storybook)
-- [styled-components <img src=".ghimages/icons/styled-components/nav-logo.png" alt="styled-components" height="10"/>](https://github.com/styled-components/styled-components)
-- [ThreeJS <img src=".ghimages/icons/threejs/favicon.ico" alt="ThreeJS" height="10"/>](https://github.com/mrdoob/three.js/)
-- [TypeScript <img src=".ghimages/icons/typescript/favicon.ico" alt="TypeScript" height="10"/>](https://github.com/microsoft/TypeScript)
-- [Vite <img src=".ghimages/icons/vite/logo.svg" alt="Vite" height="10"/>](https://github.com/vitejs/vite)
+- [Jest <img src=".github/images/icons/jest/favicon.ico" alt="Jest" height="10"/>](https://github.com/facebook/jest)
+- [Lottie <img src=".github/images/icons/lottie/favicon-32x32.png" alt="Lottie" height="10"/>](https://lottiefiles.com/)
+- [React <img src=".github/images/icons/react/favicon-32x32.png" alt="React" height="10"/>](https://github.com/facebook/react)
+- [Recoil <img src=".github/images/icons/recoil/favicon.png" alt="Recoil" height="10"/>](https://github.com/facebookexperimental/Recoil)
+- [Storybook <img src=".github/images/icons/storybook/icon-storybook.png" alt="Storybook" height="10"/>](https://github.com/storybookjs/storybook)
+- [styled-components <img src=".github/images/icons/styled-components/nav-logo.png" alt="styled-components" height="10"/>](https://github.com/styled-components/styled-components)
+- [ThreeJS <img src=".github/images/icons/threejs/favicon.ico" alt="ThreeJS" height="10"/>](https://github.com/mrdoob/three.js/)
+- [TypeScript <img src=".github/images/icons/typescript/favicon.ico" alt="TypeScript" height="10"/>](https://github.com/microsoft/TypeScript)
+- [Vite <img src=".github/images/icons/vite/logo.svg" alt="Vite" height="10"/>](https://github.com/vitejs/vite)
 
-### 🧑‍🤝‍🧑 Contributing
+## Changelog
 
-To contribute to this project, make a pull request to <https://github.com/blackboardd/xps-upcharge>.
+If you have recently updated, please read the [changelog](https://github.com/blackboardd/yarn-project-template/blob/main/docs/CHANGELOG.md) for details of what has changed.
 
-### ⚖️ License
+## 🧑‍🤝‍🧑 Contributing
 
-This project uses the [MIT license](https://opensource.org/licenses/MIT).
+Read the [contributing guide](/docs/CONTRIBUTING.md) to learn about our development process, and how to craft proposals.
 
-Copyright (c) 2021 Brighten Clark
+## ⚖️ License
+
+This project is licensed under the terms of the [MIT license](/docs/LICENSE).
