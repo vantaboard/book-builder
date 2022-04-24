@@ -98,7 +98,7 @@
     "react-hook-form": "^7.17.2",
     "react-query": "^3.26.0",
     "react-query-auth": "^1.1.0",
-    "react-redux": "^7.2.5",
+    "react-redux": "^8.0.0",
     "redux": "^4.1.1",
     "rimraf": "^3.0.2",
     "semantic-release": "^18.0.0",
