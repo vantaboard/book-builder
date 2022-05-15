@@ -83,7 +83,7 @@
     "express-pino-logger": "^6.0.0",
     "fork-ts-checker-webpack-plugin": "^6.3.4",
     "html-webpack-plugin": "^5.3.2",
-    "husky": "^7.0.2",
+    "husky": "^8.0.0",
     "jest": "^27.2.5",
     "lint-staged": "^11.2.3",
     "mini-css-extract-plugin": "^2.4.2",
