@@ -120,7 +120,7 @@
     "@mdx-js/react": "^1.6.22",
     "@react-three/drei": "^7.12.5",
     "@react-three/fiber": "^7.0.7",
-    "@sentry/node": "^6.13.3",
+    "@sentry/node": "^7.0.0",
     "@sentry/tracing": "^6.13.3",
     "@storybook/node-logger": "^6.3.10",
     "@storybook/preset-create-react-app": "^4.0.0",
