@@ -88,7 +88,7 @@
     "lint-staged": "^11.2.3",
     "mini-css-extract-plugin": "^2.4.2",
     "msw": "^0.35.0",
-    "nanoid": "^3.1.29",
+    "nanoid": "^4.0.0",
     "nodemon": "^2.0.13",
     "prettier": "^2.4.1",
     "pretty-quick": "^3.1.1",
