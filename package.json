@@ -85,7 +85,7 @@
     "html-webpack-plugin": "^5.3.2",
     "husky": "^7.0.2",
     "jest": "^27.2.5",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^13.0.0",
     "mini-css-extract-plugin": "^2.4.2",
     "msw": "^0.35.0",
     "nanoid": "^3.1.29",
