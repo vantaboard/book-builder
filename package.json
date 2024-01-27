@@ -129,7 +129,7 @@
     "@types/react-router-dom": "^5.3.1",
     "@types/three": "^0.133.0",
     "axios": "^0.22.0",
-    "esbuild": "^0.13.4",
+    "esbuild": "^0.20.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-jest-dom": "^3.9.2",
     "eslint-plugin-testing-library": "^4.12.4",
