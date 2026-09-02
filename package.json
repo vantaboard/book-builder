@@ -101,7 +101,7 @@
     "react-redux": "^7.2.5",
     "redux": "^4.1.1",
     "rimraf": "^3.0.2",
-    "semantic-release": "^18.0.0",
+    "semantic-release": "^19.0.0",
     "shelljs": "^0.8.4",
     "storybook": "^6.3.10",
     "style-dictionary": "^3.0.2",
